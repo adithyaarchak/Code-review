@@ -1,0 +1,69 @@
+*{
+   margin:0%;
+  padding:0%;
+  box-sizing: border-box;
+}
+
+html,body,
+#root{
+  height: 100%;
+  width:  100%;
+}
+
+main{
+  height:100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  background-color: rgb(25, 25, 25);
+}
+
+main .left, main .right{
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+
+}
+
+main .left{
+  background-color: black;
+  position: relative;
+}
+
+.left .code,
+.left .code pre,
+.left .code pre code {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: black !important;
+  white-space: pre-wrap;
+  color: white;
+}
+
+/* button */
+main .left .review {
+  /* this will send the button to the bottom right and the parent div should be relative */
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: white;
+  position: absolute;
+  padding: 0.9rem 2rem;
+  border-radius: 1.5rem;
+  font-weight: bolder;
+  cursor:pointer;
+  user-select: none;
+  color: black;
+
+}
+
+
+main .right{
+  background-color: #343434;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  overflow: auto;
+}
+
